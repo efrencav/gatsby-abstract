@@ -48,6 +48,20 @@
     margin-bottom: 26px;
     margin-left: 20%;
   }
+
+  .zoom_counter__subtitle_primary {
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--primaryColor);
+    display: inline-block;
+    vertical-align: top;
+    color: var(--mainWhite);
+    padding: 8px 16px;
+    margin-bottom: 26px;
+    margin-left: 19%;
+  }
   
   .zoom_counter__subtitle:empty {
     opacity: 0;

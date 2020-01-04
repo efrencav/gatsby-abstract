@@ -10,20 +10,20 @@ export default [
     },
     {
         icon: <FiClock />,
-        title: 'On time response',
+        title: 'Our Experience',
         text:
-            'Was likeness brought divided given fruit inwherein lights green hath third bring let creeping.'
+            'We have over two decades of combined experience in branding, web design & development, graphic design, and packaging design.'
     },
     {
         icon: <FiPaperclip />,
-        title: 'Cost effective',
+        title: 'Wholistic Approach',
         text:
-            'Was likeness brought divided given fruit inwherein lights green hath third bring let creeping.'
+            'Every relationship we build with a client is different. Once we determine the customers goals, we deliver a custom digital strategy that involves our partners to help our clients grow.'
     },
     {
         icon: <FiPhoneOutgoing />,
-        title: 'Always available',
+        title: '100% Transparency',
         text:
-            'Was likeness brought divided given fruit inwherein lights green hath third bring let creeping.'
+            'Our goal is to make you and your business grow. In order to make this happen is through building trust. Routine calls and reports, we keep our clients in the loop and support them as much as possible.'
     }
 ];
