@@ -28,7 +28,11 @@
   color: var(--primaryColor);
 }
 .copyright {
+  font-size: 14px;
+  letter-spacing: -1px;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   line-height: 2;
+  color: var(--grey);
 }
+

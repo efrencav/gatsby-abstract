@@ -8,7 +8,7 @@ export default function error() {
   return (
     <Layout>
       <header className={styles.error}>
-        <Banner title="oops it's a dead end">
+        <Banner title="Oops! it's a dead end">
           <Link to="/" className="btn-white">
             Back to home page
           </Link>
