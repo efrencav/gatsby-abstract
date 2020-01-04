@@ -1,17 +1,17 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../../components/Layout"
 
-class tours extends Component {
+class graphic extends Component {
   render() {
     return (
       <Layout>
         <div>
-          hello from class<Link to="/">Home</Link>
+          hello from graphic design<Link to="/">Home</Link>
         </div>
       </Layout>
     )
   }
 }
 
-export default tours
+export default graphic

@@ -31,7 +31,7 @@ export const Footer = () => {
         })}
       </div>
       <div className={styles.copyright}>
-      &copy; {new Date().getFullYear()} Copyright Abstract Creative, LLC. All rights reserved. 
+      &copy; {new Date().getFullYear()} Abstract Creative, LLC. All rights reserved. 
       </div>
     </footer>
   )
