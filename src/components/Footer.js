@@ -22,8 +22,7 @@ export const Footer = () => {
             <a
               key={index}
               href={item.url}
-              target="_blank"
-              rel="noopener roreferrer"
+              target="_blank" rel="noopener roreferrer"
             >
               {item.icon}
             </a>
@@ -31,7 +30,7 @@ export const Footer = () => {
         })}
       </div>
       <div className={styles.copyright}>
-      &copy; {new Date().getFullYear()} Abstract Creative, LLC. All rights reserved. 
+        &copy; {new Date().getFullYear()} Abstract Creative, LLC. All rights reserved.
       </div>
     </footer>
   )

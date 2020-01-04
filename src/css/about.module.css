@@ -144,3 +144,90 @@
 .hr_long-white span:after, .hr_long_white span:before {
   background: #fff;
 }
+
+/*
+features-block
+*/
+
+.features_block {
+  text-align: center;
+  padding: 84px 0 40px;
+}
+
+.features_block__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 11px;
+}
+
+.features_block__title {
+  font-size: 48px;
+  line-height: 1.25;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 26px;
+}
+
+.features_block__text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #666;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.75;
+  margin-bottom: 100px;
+}
+
+.features_block__item {
+  margin-bottom: 40px;
+}
+
+.features_block__feature_icon {
+  font-size: 80px;
+  color: #f14201;
+  margin-bottom: 31px;
+}
+
+.features_block__feature_title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.features_block__feature_text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #666;
+  line-height: 1.75;
+}
+
+
+/*
+cards-block
+*/
+
+.cards_block {
+  padding-top: 140px;
+  padding-bottom: 30px;
+}
+
+.cards_block__head {
+  margin-bottom: 135px;
+}
+
+.cards_block__title {
+  font-size: 48px;
+  line-height: 1.25;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.cards_block__text {
+  padding-top: 6px;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #666;
+}
