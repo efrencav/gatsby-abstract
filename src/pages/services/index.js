@@ -11,7 +11,7 @@ export default () => (
     <Layout>
       <AboutHero>
         <Banner
-          title="Growing our customers brands with our supportive services."
+          title="Growing our customers brands with our supportive creative services."
           info=""
         >
         </Banner>
