@@ -4,13 +4,13 @@ export default [
     text: "Home",
   },
   {
-    path: "/tours",
+    path: "/about",
     text: "About Us",
   },
-  // {
-  //   path: "/blog",
-  //   text: "Services",
-  // },
+  {
+    path: "/services/",
+    text: "Services",
+  },
   {
     path: "/contact",
     text: "Contact",
