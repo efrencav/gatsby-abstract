@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../../css/banner.module.css"
+import styles from "../css/banner.module.css"
 // import Underline from "../images/underline.svg"
 
 

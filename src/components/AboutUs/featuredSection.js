@@ -9,7 +9,7 @@ export const featuredBlock = () => {
     return (
         <div className={styles.features_block}>
             <div className="container">
-                <div className={styles.features_block__subtitle}>Why Choose Us</div>
+                <div className={styles.zoom_counter__subtitle_black}>Why Choose Us</div>
                 <div className={styles.features_block__title}>
                     What makes us different?
         </div>
@@ -21,8 +21,8 @@ export const featuredBlock = () => {
                 <div className="row">
                     {icons.map((item, index) => {
                         return (
-                            <div className="col-12 col-md-6 col-lg-3">
-                                <div className={styles.features_block__item} key={index}></div>
+                            <div className="col-12 col-md-6 col-lg-3" key={index}>
+                                <div className={styles.features_block__item}></div>
                                 <div className={styles.features_block__feature_icon}>{item.icon}</div>
                                 <div className={styles.features_block__feature_title}>
                                     {item.title}

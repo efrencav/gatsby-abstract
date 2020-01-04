@@ -6,7 +6,7 @@ export default [
         icon: <FiUsers />,
         title: 'Dedicated team',
         text:
-            'Was likeness brought divided given fruit inwherein lights green hath third bring let creeping.'
+            'Together, we work hard, we laugh a lot, we brainstorm nonstop, we use hundreds of Post-Its a week, and we give the best high-fives in town.'
     },
     {
         icon: <FiClock />,
