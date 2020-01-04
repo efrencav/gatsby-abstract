@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+
+:root {
+  --primaryColor: #F05444;
+  --mainWhite: #fff;
+  --offWhite: #F8F8F8;
+  --mainBlack: #242323;
+  --ligterBlack: #2b2b2b;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --grey: grey;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 4px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --leftAlign: 0 250px;
+  --left350: 0 380px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.4;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1.25rem;
+  font-size: 20px;
+  margin-bottom: 84px;
+  /* line-height: 1.6; */
+}
+
+.defaultHero {
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(rgba(240, 84, 68, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/zoom-image-head-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.25rem 1rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.btn-white:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+  border: 2px solid var(--mainWhite);
+  text-decoration: none !important;
+
+}
+.btn-primary {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  /* border: 2px solid var(--primaryColor); */
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.rich {
+  background: var(--primaryColor);
+}
+@media screen and (min-width: 768px) {
+  .defaultHero {
+    box-sizing: border-box;
+    top: -16px;
+    left: -16px;
+  }
+}
+
+/* @media screen and (min-width: 1920px) {
+  .defaultHero {
+    padding: 0 8%;
+  }
+} */
+
+/* @media screen and (min-width: 2560px) {
+  .defaultHero {
+    box-sizing: border-box;
+    padding: 0 18%;
+  }
+} */
