@@ -17,6 +17,10 @@
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+
+.rugged_line {
+  background-image: url("../images/underline.svg");
+}
 @media screen and (min-width: 768px) {
   .banner h1 {
     font-size: 4rem;
@@ -24,6 +28,10 @@
   }
   .banner p {
     width: 70%;
+  }
+  .rugged_line {
+    background-image: url("../images/underline.svg");
+    width: 500px;
   }
 }
 
@@ -76,13 +84,15 @@
         line-height: 1;
         padding: 0 10%;
       }
-      .underline {
-        margin-left: -150px;
-      }
+
       .zoom_counter__subtitle {
         font-size: 12px;
         line-height: 1.125;
         margin-left: 10%;
+      }
+      .rugged_line {
+        background-image: url("../images/underline.svg");
+        width: 275px;
       }
      }
 
@@ -95,13 +105,16 @@
         line-height: 1;
         padding: 0 10%;
       }
-      .underline {
-        margin-left: -150px;
-      }
+
       .zoom_counter__subtitle {
         font-size: 12px;
         line-height: 1.125;
         margin-left: 10%;
+      }
+
+      .rugged_line {
+        background-image: url("../images/underline.svg");
+        width: 325px;
       }
     }
 
@@ -111,8 +124,9 @@
       line-height: 1;
       padding: 0 8%;
     }
-    .underline {
-      margin-left: -150px;
+    .rugged_line {
+      background-image: url("../images/underline.svg");
+      width: 250px;
     }
     .zoom_counter__subtitle {
       font-size: 12px;
