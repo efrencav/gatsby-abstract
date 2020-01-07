@@ -68,6 +68,25 @@
   }
 
   @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+      .banner h1 {
+        font-size: 40px;
+        line-height: 1;
+        padding: 0 10%;
+      }
+      .underline {
+        margin-left: -150px;
+      }
+      .zoom_counter__subtitle {
+        font-size: 12px;
+        line-height: 1.125;
+        margin-left: 10%;
+      }
+     }
+
+  @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
     and (-webkit-device-pixel-ratio : 3) { 
