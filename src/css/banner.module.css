@@ -68,7 +68,7 @@
     color: var(--mainWhite);
     padding: 8px 16px;
     margin-bottom: 26px;
-    margin-left: 19%;
+    /* margin-left: 19%; */
   }
   
   .zoom_counter__subtitle:empty {
