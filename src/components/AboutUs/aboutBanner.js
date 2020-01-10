@@ -7,7 +7,7 @@ export const aboutBanner = ({ title, info, children }) => {
 
   return (
     <div className={styles.banner}>
-      <span className={styles.zoom_counter__subtitle_primary}>What we do</span>
+      <span className={styles.zoom_counter__subtitle}>What we do</span>
       <h1>{title}</h1>
       <p>{info}</p>
       {children}
