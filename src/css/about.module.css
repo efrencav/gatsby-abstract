@@ -16,12 +16,7 @@
   position: relative;
 }
 
-/* .aboutBack {
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  z-index: -2;
-} */
+
 .about-img img {
   width: 100%;
   display: block;
