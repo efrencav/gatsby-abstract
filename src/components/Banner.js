@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../css/banner.module.css"
-// import Underline from "../images/underline.svg"
+import Underline from "../images/underline.svg"
 
 
 export const Banner = ({ title, info, children }) => {
@@ -25,7 +25,7 @@ export const Banner = ({ title, info, children }) => {
       <span className={styles.zoom_counter__subtitle}>{greeting}</span>
       <h1>{title}</h1>
       <span className={styles.rugged_line}></span>
-      {/* <img src={Underline} className={styles.underline} alt="underline" /> */}
+      <img src={Underline} className={styles.underline} alt="underline" />
       <p>{info}</p>
       {children}
     </div>

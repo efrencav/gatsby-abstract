@@ -5,7 +5,7 @@ import styles from '../../css/about.module.css'
 
 // import '../../css/bootstrap.min.css';
 
-export const desctiptionSection = () => {
+export const descriptionSection = () => {
     return (
         <div className={styles.cards_block}>
             <div className={styles.cards_block__head}>
@@ -20,10 +20,7 @@ export const desctiptionSection = () => {
                         </div>
                         <div className="col-12 col-lg-6 offset-xl-1">
                             <div className={styles.cards_block__text}>
-                                We love crafting beautiful, smart and inspired work that focuses on a business’ goals and their customers.
-                                We do this across multiple touch points to help organizations achieve their goals.
-
-                                Our work is recognized for challenging the market, driving innovation and accelerating business's performance.
+                                We collaborate with businesses to capture stories, elevate brands, and attract the attention of target audiences with impactful design. Our team works with your organization to develop strategies to spark growth and create results.
                             </div>
                             <span className={styles.hr_short}></span>
                         </div>
@@ -34,4 +31,4 @@ export const desctiptionSection = () => {
     );
 };
 
-export default desctiptionSection;
+export default descriptionSection;

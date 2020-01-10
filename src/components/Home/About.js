@@ -13,7 +13,7 @@ export const About = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <span className={styles.zoom_counter__subtitle_black}>Abstract Studio</span>
+          <span className={styles.zoom_counter__subtitle_primary}>Abstract</span>
           <h2>Crafting beautiful experiences</h2>
           <span className={styles.hr_short}></span>
           <p>

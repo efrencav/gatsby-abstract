@@ -12,12 +12,15 @@ export const featuredBlock = () => {
                 <div className={styles.zoom_counter__subtitle_black}>Why Choose Us</div>
                 <div className={styles.features_block__title}>
                     What makes us different?
-        </div>
+                </div>
                 <div className={styles.features_block__text}>
                     Was likeness brought divided given fruit in wherein lights green hath
                     third bring let creeping. Third them firmament give green Creature
                     night first creature.
-        </div>
+                </div>
+                <div>
+                    <span className={styles.hr_long}></span>
+                </div>
                 <div className="row">
                     {icons.map((item, index) => {
                         return (
