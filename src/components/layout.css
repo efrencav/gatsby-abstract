@@ -3,7 +3,7 @@
 
 
 :root {
-  --primaryColor: #F05444;
+  --primaryColor: #f14201;
   --mainWhite: #fff;
   --offWhite: #F8F8F8;
   --mainBlack: #242323;
@@ -50,7 +50,8 @@ a {
 p {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 1.25rem;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 84px;
   /* line-height: 1.6; */
 }

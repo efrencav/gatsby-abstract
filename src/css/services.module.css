@@ -2,13 +2,13 @@
   background: var(--offWhite);
   padding: 10rem 0;
 }
-.center {
+/* .center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 2rem;
-}
+} */
 .service {
   margin: 2rem 0;
 }

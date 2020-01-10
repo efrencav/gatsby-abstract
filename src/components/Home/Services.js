@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Title from "./serviceTitle"
 import styles from "../../css/services.module.css"
+import about from "../../css/about.module.css"
 import services from "../../constants/services"
 
 export const Services = () => {
@@ -9,6 +10,7 @@ export const Services = () => {
     <section className={styles.services}>
       <Title title="our services" subtitle="" />
       <span className={styles.hr_long}></span>
+
       <div className={styles.center}>
         {services.map((item, index) => {
           return (
@@ -34,3 +36,12 @@ export const Services = () => {
 }
 
 export default Services
+
+// <div className="container">
+//         <div className={about.zoom_counter__subtitle_black}>Why Choose Us</div>
+//         <div className={about.features_block__text}>
+//           Was likeness brought divided given fruit in wherein lights green hath
+//           third bring let creeping. Third them firmament give green Creature
+//           night first creature.
+//           </div>
+//       </div>

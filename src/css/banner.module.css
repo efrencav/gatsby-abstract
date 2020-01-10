@@ -4,7 +4,7 @@
   color: var(--mainWhite);
 }
 .banner h1 {
-  font-size: 80px;
+  font-size: 80px !important;
   line-height: 1;
   margin-bottom: 2rem;
   /* padding: 0 1rem; */
