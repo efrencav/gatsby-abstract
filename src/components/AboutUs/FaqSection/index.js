@@ -27,17 +27,7 @@ const FaqSection = ({
     titleStyle,
     descriptionStyle,
 }) => {
-    const Data = useStaticQuery(graphql`
-      query {
-        dataJson {
-          FAQ_DATA {
-            description
-            expend
-            title
-          }
-        }
-      }
-    `);
+
     return (
         <FaqSectionWrapper id="faqSection">
             <Container>

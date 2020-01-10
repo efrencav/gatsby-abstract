@@ -1,15 +1,36 @@
 import React from "react"
-// import Title from "./Title"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import styles from "../../css/about.module.css"
-import img from "../../images/zoom-count-bg.jpg"
+// import img from "../../images/zoom-count-bg.jpg"
 
 export const About = () => {
+
+  const data = useStaticQuery(graphql`
+  query {
+    abstract: file(relativePath:{eq: "zoom-image-head-bg-white.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    zoomCount: file(relativePath:{eq: "zoom-count-bg.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }`)
   return (
     <section className={styles.about}>
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainter}>
-            <img src={img} alt="about company" />
+            <Img fluid={data.zoomCount.childImageSharp.fluid}/>
           </div>
         </article>
         <article className={styles.aboutInfo}>
