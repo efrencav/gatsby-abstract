@@ -7,7 +7,7 @@ import services from "../../constants/services"
 export const Services = () => {
   return (
     <section className={styles.services}>
-      <Title title="our" subtitle="services" />
+      <Title title="our services" subtitle="" />
       <span className={styles.hr_long}></span>
       <div className={styles.center}>
         {services.map((item, index) => {

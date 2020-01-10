@@ -22,7 +22,17 @@ const TitleWrapper = styled.div`
     color: var(--primaryColor);
   }
   .title {
-    color: var(--mainBlack);
+   /* color: var(--mainBlack); */
+   font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  font-weight: 300;
+  background: var(--ligterBlack);
+  display: inline-block;
+  vertical-align: top;
+  color: var(--mainWhite);
+  padding: 5px 16px;
+  margin-bottom: 10px;
   }
   
   span {
