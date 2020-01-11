@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
-import { StyledHalfScreenWrapper } from './SharedStyledComponents'
+import { StyledSliderWrapper } from './SharedStyledComponents'
 
 /**
  * In this functional component a fullscreen <BackgroundImage /> may be created
@@ -13,27 +13,27 @@ import { StyledHalfScreenWrapper } from './SharedStyledComponents'
  * @return {*}
  * @constructor
  */
-const ImageSection = ({ className, children }) => {
-  const { ImageSection, medium, small } = useStaticQuery(
+const SliderSection = ({ className, children }) => {
+  const { SliderSection, medium, small } = useStaticQuery(
     graphql`
       query {
-        ImageSection: file(relativePath: { eq: "zoom-image-head-bg-white.jpg" }) {
+        SliderSection: file(relativePath: { eq: "featured-project-image-1.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 4160) {
+            fluid(quality: 100, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        medium: file(relativePath: { eq: "zoom-image-head-bg-white.jpg" }) {
+        medium: file(relativePath: { eq: "featured-project-image-1.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1400, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        small: file(relativePath: { eq: "zoom-image-head-bg-white.jpg" }) {
+        small: file(relativePath: { eq: "featured-project-image-1.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 490, maxHeight: 1200, quality: 100) {
+            fluid(maxWidth: 490, maxHeight: 800, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -50,19 +50,19 @@ const ImageSection = ({ className, children }) => {
       media: `(min-width: 491px)`,
     },
     {
-      ...ImageSection.childImageSharp.fluid,
+      ...SliderSection.childImageSharp.fluid,
       media: `(min-width: 1401px)`,
     },
   ]
 
   return (
-    <StyledHalfScreenWrapper>
+    <StyledSliderWrapper>
       <BackgroundImage
         Tag="section"
         className={className}
         fluid={backgroundArtDirectionStack}
         backgroundColor={`#f14201`}
-        title="Abstract Creative"
+        title="Abstract Creative Slider"
         id="adfullscreenbg"
         role="img"
         // aria-label="Abstract Creative"
@@ -70,13 +70,13 @@ const ImageSection = ({ className, children }) => {
       >
         {children}
       </BackgroundImage>
-    </StyledHalfScreenWrapper>
+    </StyledSliderWrapper>
   )
 }
 
-const StyledFullBackground = styled(ImageSection)`
+const StyledFullBackground = styled(SliderSection)`
   width: 100%;
-  height: 55vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,6 +6,7 @@ import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import Section from "../components/ImageSection"
+import Slider from "../components/SliderSection"
 
 import ArtDirectedFullBackground from '../components/FullBackground'
 
@@ -27,6 +28,7 @@ export default () => (
       <Section>
         <About />
       </Section>
+      <Slider />
       <Services />
     </Layout>
   </div>

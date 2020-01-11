@@ -26,7 +26,6 @@ export const About = () => {
   }`)
   return (
     <section className={styles.about}>
-
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainter}>

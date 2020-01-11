@@ -20,6 +20,14 @@ export const StyledHalfScreenWrapper = styled.div`
   display: flex;
   overflow: hidden;
 `
+export const StyledSliderWrapper = styled.div`
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+`
 export const StyledContentCenterWrapper = styled.div`
   display: flex;
   text-align: center;
