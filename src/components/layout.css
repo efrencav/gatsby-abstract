@@ -52,14 +52,12 @@ p {
   margin-bottom: 1.25rem;
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 84px;
+  margin-bottom: 64px;
   /* line-height: 1.6; */
 }
 
 .defaultHero {
   min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(240, 84, 68, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/zoom-image-head-bg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,23 +85,25 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
+  color: var(--primaryColor);
   border: 2px solid var(--mainWhite);
+  bottom: 2px;
   padding: 0.25rem 1rem;
   display: inline-block;
   transition: var(--mainTransition);
-  cursor: pointer;
+  line-height: 1.4;
+  /* cursor: pointer; */
 }
 .btn-white:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
+  /* background: var(--mainWhite); */
+  /* color: var(--primaryColor); */
   border: 2px solid var(--mainWhite);
   text-decoration: none !important;
 
 }
 .btn-primary {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
+  background: var(--mainWhite);
+  color: var(--primaryColor);
   /* border: 2px solid var(--primaryColor); */
 }
 .btn-primary:hover {

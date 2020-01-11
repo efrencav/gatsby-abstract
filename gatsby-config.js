@@ -25,8 +25,9 @@ module.exports = {
       path: `${__dirname}/src/images`
     }
   },
-  `gatsby-plugin-sharp`, 
-  `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
   {
     resolve: `gatsby-plugin-sharp`,
     options: {

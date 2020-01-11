@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "../../css/about.module.css"
-// import img from "../../images/zoom-count-bg.jpg"
 
 export const About = () => {
 
@@ -16,7 +15,7 @@ export const About = () => {
         }
       }
     }
-    zoomCount: file(relativePath:{eq: "zoom-count-bg.jpg"}) {
+    zoomCount: file(relativePath:{eq: "20years.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1920) {
           src
@@ -31,7 +30,7 @@ export const About = () => {
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainter}>
-            <Img fluid={data.zoomCount.childImageSharp.fluid}/>
+            <Img fluid={data.zoomCount.childImageSharp.fluid} />
           </div>
         </article>
         <article className={styles.aboutInfo}>
