@@ -5,6 +5,7 @@ import SEO from '../components/SEO'
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
+import Section from "../components/ImageSection"
 
 import ArtDirectedFullBackground from '../components/FullBackground'
 
@@ -23,7 +24,9 @@ export default () => (
         >
         </Banner>
       </ArtDirectedFullBackground>
-      <About />
+      <Section>
+        <About />
+      </Section>
       <Services />
     </Layout>
   </div>

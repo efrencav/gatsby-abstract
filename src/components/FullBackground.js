@@ -62,10 +62,10 @@ const ArtDirectedFullBackground = ({ className, children }) => {
         className={className}
         fluid={backgroundArtDirectionStack}
         backgroundColor={`#f14201`}
-        title="Art-Directed Fullscreen Background"
+        title="Abstract Creative"
         id="adfullscreenbg"
         role="img"
-        aria-label="Art-Directed Fullscreen Background"
+        // aria-label="Abstract Creative"
         preserveStackingContext={true}
       >
         {children}

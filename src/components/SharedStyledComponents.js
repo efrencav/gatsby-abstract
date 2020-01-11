@@ -14,7 +14,12 @@ export const StyledFullScreenWrapper = styled.div`
   display: flex;
   overflow: hidden;
 `
-
+export const StyledHalfScreenWrapper = styled.div`
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  overflow: hidden;
+`
 export const StyledContentCenterWrapper = styled.div`
   display: flex;
   text-align: center;
