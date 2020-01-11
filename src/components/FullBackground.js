@@ -14,8 +14,8 @@ import { StyledFullScreenWrapper } from './SharedStyledComponents'
  * @constructor
  */
 const ArtDirectedFullBackground = ({ className, children }) => {
-    const { desktop, medium, small } = useStaticQuery(
-        graphql`
+  const { desktop, medium, small } = useStaticQuery(
+    graphql`
       query {
         desktop: file(relativePath: { eq: "zoom-image-head-bg.jpg" }) {
           childImageSharp {
@@ -40,38 +40,38 @@ const ArtDirectedFullBackground = ({ className, children }) => {
         }
       }
     `
-    )
+  )
 
-    // Art-Direction Array
-    const backgroundArtDirectionStack = [
-        small.childImageSharp.fluid,
-        {
-            ...medium.childImageSharp.fluid,
-            media: `(min-width: 491px)`,
-        },
-        {
-            ...desktop.childImageSharp.fluid,
-            media: `(min-width: 1401px)`,
-        },
-    ]
+  // Art-Direction Array
+  const backgroundArtDirectionStack = [
+    small.childImageSharp.fluid,
+    {
+      ...medium.childImageSharp.fluid,
+      media: `(min-width: 491px)`,
+    },
+    {
+      ...desktop.childImageSharp.fluid,
+      media: `(min-width: 1401px)`,
+    },
+  ]
 
-    return (
-        <StyledFullScreenWrapper>
-            <BackgroundImage
-                Tag="section"
-                className={className}
-                fluid={backgroundArtDirectionStack}
-                backgroundColor={`#040e18`}
-                title="Art-Directed Fullscreen Background"
-                id="adfullscreenbg"
-                role="img"
-                aria-label="Art-Directed Fullscreen Background"
-                preserveStackingContext={true}
-            >
-                {children}
-            </BackgroundImage>
-        </StyledFullScreenWrapper>
-    )
+  return (
+    <StyledFullScreenWrapper>
+      <BackgroundImage
+        Tag="section"
+        className={className}
+        fluid={backgroundArtDirectionStack}
+        backgroundColor={`#f14201`}
+        title="Art-Directed Fullscreen Background"
+        id="adfullscreenbg"
+        role="img"
+        aria-label="Art-Directed Fullscreen Background"
+        preserveStackingContext={true}
+      >
+        {children}
+      </BackgroundImage>
+    </StyledFullScreenWrapper>
+  )
 }
 
 const StyledFullBackground = styled(ArtDirectedFullBackground)`
