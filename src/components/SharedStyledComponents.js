@@ -23,8 +23,8 @@ export const StyledSliderWrapper = styled.div`
   width: 100%;
   height: 80vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 `
 export const StyledContentCenterWrapper = styled.div`
   display: flex;

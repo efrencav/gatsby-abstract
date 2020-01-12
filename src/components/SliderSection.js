@@ -78,8 +78,8 @@ const StyledSliderBackground = styled(SliderSection)`
   width: 100%;
   height: 80vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   
 `
 

@@ -1,12 +1,14 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
 import Banner from "../components/Banner"
+import OtherBanner from "../components/OtherBanner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import Section from "../components/ImageSection"
 import Slider from "../components/SliderSection"
+
 
 import ArtDirectedFullBackground from '../components/FullBackground'
 
@@ -28,7 +30,12 @@ export default () => (
       <Section>
         <About />
       </Section>
-      <Slider />
+      <Slider>
+        <OtherBanner
+          title="Muscle Rehab"
+          info="Findout more about this project." />
+        {/* <Link to="/">Click here</Link> */}
+      </Slider>
       <Services />
     </Layout>
   </div>
