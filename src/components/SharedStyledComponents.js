@@ -15,16 +15,14 @@ export const StyledFullScreenWrapper = styled.div`
   overflow: hidden;
 `
 export const StyledHalfScreenWrapper = styled.div`
+  margin: 0 auto;
+  position:relative;
   width: 100%;
-  height: 55vh;
-  display: flex;
-  overflow: hidden;
 `
 export const StyledSliderWrapper = styled.div`
   width: 100%;
-  height: 45vh;
+  height: 80vh;
   display: flex;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
 `

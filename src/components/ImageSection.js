@@ -61,7 +61,7 @@ const ImageSection = ({ className, children }) => {
         Tag="section"
         className={className}
         fluid={backgroundArtDirectionStack}
-        backgroundColor={`#f14201`}
+        backgroundColor={`#fff`}
         title="Abstract Creative"
         id="adfullscreenbg"
         role="img"
@@ -75,11 +75,9 @@ const ImageSection = ({ className, children }) => {
 }
 
 const StyledFullBackground = styled(ImageSection)`
-  width: 100%;
-  height: 55vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+margin: 0 auto;
+position:relative;
+width: 100%;
 `
 
 export default StyledFullBackground

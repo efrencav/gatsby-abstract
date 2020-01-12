@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import styles from "../../css/about.module.css"
 
@@ -39,9 +39,11 @@ export const About = () => {
           <p>
             We are idea-driven, working with a strong focus on design and user experience. We love crafting beautiful, smart and inspired work that focuses on a business’ goals and our customers. We do this across multiple touch points to help organizations achieve their goals.
           </p>
+          <Link to="/about">
           <button type="button" className="btn-primary">
             About Us
           </button>
+          </Link>
         </article>
       </div>
     </section>

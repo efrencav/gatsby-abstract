@@ -61,7 +61,7 @@ const SliderSection = ({ className, children }) => {
         Tag="section"
         className={className}
         fluid={backgroundArtDirectionStack}
-        backgroundColor={`#f14201`}
+        backgroundColor={`#f8f8f8`}
         title="Abstract Creative Slider"
         id="adfullscreenbg"
         role="img"
@@ -74,13 +74,14 @@ const SliderSection = ({ className, children }) => {
   )
 }
 
-const StyledFullBackground = styled(SliderSection)`
+const StyledSliderBackground = styled(SliderSection)`
   width: 100%;
-  height: 45vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 `
 
-export default StyledFullBackground
+export default StyledSliderBackground
 
