@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby'
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
 import Box from '../../core/Box';
@@ -22,6 +23,8 @@ const images = [
 ];
 
 const FeatureSlider = ({ secTitleWrapper, secTitle, secDescription }) => {
+
+
     return (
         <SliderWrapper id="keyfeature">
             <div className="FeatureSliderInner">

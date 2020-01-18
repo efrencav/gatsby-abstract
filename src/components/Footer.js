@@ -1,12 +1,17 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import logo from "../images/symbol.png"
+
 import styles from "../css/footer.module.css"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 import { Link } from "gatsby"
 
 export const Footer = () => {
+
   return (
     <footer className={styles.footer}>
+      <img src={logo} alt="abstract logo" className={styles.paddingBottom} />
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
