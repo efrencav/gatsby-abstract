@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Mockup from '../../images/mobile1.png';
+// import Mockup from '../../images/mobile1.png';
 
 const FeatureSliderWrapper = styled.div`
   position: relative;
@@ -183,5 +183,20 @@ const FeatureSliderWrapper = styled.div`
       display: none;
     }
   }
+
+  .image-gallery-left-nav {
+    margin-left: 20px;
+  }
+  .image-gallery-right-nav {
+    margin-right: 20px;
+  }
+  .image-gallery-left-nav 
+  .image-gallery-svg, 
+  .image-gallery-right-nav 
+  .image-gallery-svg {
+    height: 90px;
+    width: 45px;
+    padding: 5px
+}
 `;
 export default FeatureSliderWrapper;
