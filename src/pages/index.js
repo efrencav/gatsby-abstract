@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
 import Banner from "../components/Banner"
-import OtherBanner from "../components/OtherBanner"
+// import OtherBanner from "../components/OtherBanner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import Section from "../components/ImageSection"
-import Slider from "../components/SliderSection"
+// import Slider from "../components/SliderSection"
 import Featured from "../components/Home/Slider"
 
 

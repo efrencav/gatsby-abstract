@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Title from "./serviceTitle"
 import styles from "../../css/services.module.css"
-import about from "../../css/about.module.css"
+// import about from "../../css/about.module.css"
 import services from "../../constants/services"
 
 export const Services = () => {
