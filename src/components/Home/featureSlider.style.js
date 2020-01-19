@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import Mockup from '../../images/mobile1.png';
-import Background from '../../images/mockup_bg.svg';
 
 const FeatureSliderWrapper = styled.div`
   position: relative;
   padding-top: 200px;
-  padding-bottom: 20px;
-  @media (max-width: 1600px) {
-    padding-bottom: 100px;
+  padding-bottom: 200px;
+  @media (max-width: 1680px) {
+    padding-bottom: 200px;
+    
   }
   @media (max-width: 1440px) {
     padding-top: 140px;
@@ -26,12 +26,13 @@ const FeatureSliderWrapper = styled.div`
   }
   .FeatureSlider {
     position: relative;
-    background-image: url(${Background});
     display: flex;
-    height: 40vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    /* @media (max-width: 1680px) {
+      background-position: bottom;
+    }
     @media (max-width: 1440px) {
       background-position: bottom;
     }
@@ -44,7 +45,7 @@ const FeatureSliderWrapper = styled.div`
     }
     @media (max-width: 480px) {
       background-image: none;
-    }
+    } */
     .image-gallery {
       position: relative;
       z-index: 2;
@@ -52,11 +53,24 @@ const FeatureSliderWrapper = styled.div`
     }
 
     .image-gallery-slide-wrapper {
-      width: 375px;
+      width: 1920px;
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      height: 749px;
+      height: 729px;
+      @media (max-width: 1680px) {
+      width: 1680px;
+      height: auto;
+
+      }
+      @media (max-width: 1440px) {
+      width: 1440px;
+      height: auto;
+      }
+      @media (max-width: 1024px) {
+      width: 1024px;
+      height: auto;
+      }
       @media (max-width: 990px) {
         width: 250px;
         height: 505px;
@@ -64,13 +78,11 @@ const FeatureSliderWrapper = styled.div`
 
       &::before {
         content: '';
-        background-image: url(${Mockup});
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
         background-repeat: no-repeat;
         background-size: contain;
       }
@@ -84,7 +96,7 @@ const FeatureSliderWrapper = styled.div`
         box-shadow: 0 0 68px rgba(42, 26, 142, 0.2);
         display: block;
         position: absolute;
-        border-radius: 50px;
+        /* border-radius: 50px; */
       }
       .image-gallery-swipe {
         padding: 19px 15px 16px 19px;
@@ -95,7 +107,7 @@ const FeatureSliderWrapper = styled.div`
         }
         .image-gallery-slides {
           height: 100%;
-          border-radius: 20px;
+          /* border-radius: 20px; */
           @media (max-width: 990px) {
             border-radius: 40px;
           }

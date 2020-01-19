@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../css/banner.module.css"
- 
+
 
 export const OtherBanner = ({ title, info, children }) => {
 

@@ -8,8 +8,10 @@ import Heading from '../../core/Heading';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import Container from '../../common/UI/Container';
 import SliderWrapper from './featureSlider.style';
-import Image1 from '../../images/mask_1.png';
-import Image2 from '../../images/mask_2.png';
+import Image1 from '../../images/featured-project-image-1.jpg';
+import Image2 from '../../images/featured-project-image-2.jpg';
+import Image3 from '../../images/featured-project-image-3.jpg';
+
 
 const images = [
     {
@@ -19,6 +21,10 @@ const images = [
     {
         original: `${Image2}`,
         originalAlt: 'slide two',
+    },
+    {
+        original: `${Image3}`,
+        originalAlt: 'slide three',
     },
 ];
 
@@ -41,7 +47,7 @@ const FeatureSlider = ({ secTitleWrapper, secTitle, secDescription }) => {
                     <ImageGallery items={images} className="Slider-img"
                         showPlayButton={false}
                         showFullscreenButton={false}
-                        showNav={false}
+                        showNav={true}
                         showBullets={true}
                         autoPlay={true}
                     />
@@ -64,18 +70,23 @@ FeatureSlider.defaultProps = {
         mb: ['65px', '65px', '70px', '70px', '70px'],
     },
     secTitle: {
-        fontSize: ['22px', '26px', '26px', '30px', '36px'],
+        fontSize: '16px',
         fontWeight: '600',
-        color: '#15172C',
-        lineHeight: '1.34',
-        mb: ['15px', '18px', '18px', '20px', '30px'],
+        textTransform: 'uppercase',
+        background: 'var(--primaryColor)',
+        display: 'inline-block',
+        verticalAlign: 'top',
+        color: "var(--mainWhite)",
+        lineHeight: '1.125',
+        padding: '4px 6px 2px',
+        marginBottom: '20px',
         textAlign: 'center',
-        fontFamily: 'Poppins',
+        ml: 'auto',
     },
     secDescription: {
         fontSize: ['15px', '16px'],
         fontWeight: '400',
-        color: '#15172C',
+        color: "var(--darkGrey)",
         lineHeight: '1.5',
         mb: '0',
         textAlign: 'center',
@@ -83,8 +94,19 @@ FeatureSlider.defaultProps = {
         maxWidth: '100%',
         ml: 'auto',
         mr: 'auto',
-        fontFamily: 'Lato',
+        // fontFamily: 'Lato',
     },
 };
 
 export default FeatureSlider;
+
+// font-size: 16px;
+// line-height: 1.125;
+// text-transform: uppercase;
+// font-weight: 600;
+// background: var(--primaryColor);
+// display: inline-block;
+// vertical-align: top;
+// color: var(--mainWhite);
+// padding: 4px 6px 2px;
+// margin-bottom: 20px;
