@@ -29,7 +29,7 @@
     "gatsby-transformer-json": "^2.2.22",
     "gatsby-transformer-sharp": "^2.3.12",
     "intersection-observer": "^0.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.0",
     "prop-types": "^15.7.2",
